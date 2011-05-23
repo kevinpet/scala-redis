@@ -45,7 +45,7 @@ object NodeOperationsSpec extends Specification with Mockito {
     
     "start monitor debug on the server" in {
       connection.readBoolean returns true
-      client.monitor._1 mustEqual true
+      client.monitor mustEqual true
       connection.write("MONITOR\r\n") was called
     }
     

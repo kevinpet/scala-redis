@@ -56,9 +56,9 @@ trait NodeOperations {
   
   // MONITOR
   // is a debugging command that outputs the whole sequence of commands received by the Redis server.
-  def monitor: (Boolean, java.io.BufferedReader) = {
+  def monitor: Boolean = {
     connection.write("MONITOR\r\n")
-    (connection.readBoolean, connection.getInputStream)
+    connection.readBoolean
   }
   
   // SLAVEOF
