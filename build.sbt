@@ -1,8 +1,8 @@
 name := "redisclient"
 
-version := "1.0.5"
+version := "1.0.6"
 
-scalaVersion := "2.10.1"
+scalaVersion := "2.11.2"
 
 libraryDependencies += "org.scala-tools.testing" % "specs_2.10" % "1.6.9" % "test"
 
